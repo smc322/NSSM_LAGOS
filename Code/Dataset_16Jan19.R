@@ -1,5 +1,7 @@
 ##want to make a dataset for Pavel & Marie to start testing out the model -- only spatial variation, not temporal. start here w/ Secchi b/c most data, and treat ts obs from 1990-present as replicates bc shouldn't change much. 
 
+#charlotte was here
+
 #16 Jan want to update to have more response variables
 
 library(LAGOSNE)
