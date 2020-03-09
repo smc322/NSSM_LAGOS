@@ -132,8 +132,8 @@ segments(3.65, -4, 3.65, 110, lwd=2)
 segments(6.85, -4, 6.85, 110, lwd=2)
 segments(10.1, -4, 10.1, 110, lwd=2)
 segments(12.3, -4, 12.3, 110, lwd=2)
-text(2.025, 111, "Baseflow", pos=3)
-text(5.25, 111, "N Deposition", pos=3)
+text(2.025, 111, "Baseflow (%)", pos=3)
+text(5.25, 111, "N Deposition (kg/ha)", pos=3)
 text(8.475, 111, "% Urban", pos=3)
 text(11.2, 111, "% Forest", pos=3)
 boxplot(value~region, data=ndep, notch=TRUE,
@@ -151,26 +151,5 @@ boxplot(value~region, data=forest, notch=TRUE,
 dev.off()
 
 
-
-
-
-
-###junk below
-x1 <- covars.mw$hu8_baseflow
-x2 <- covars.mw$ws_urban
-x3 <- covars.mw$ws_forest
-x4 <- covars.mw$hu8_totalndepo
-x5<- covars.ny$hu8_baseflow
-x6<- covars.ny$ws_urban
-x7 <- covars.ny$ws_forest
-x8 <- covars.ny$hu8_totalndepo
-
-vioplot(x1, x5, x2, x6, x3, x7, x4, x8, col=c("palegreen4", "goldenrod3", "palegreen4", "goldenrod3", "palegreen4", "goldenrod3", "palegreen4", "goldenrod3"), ylim=c(0, 100))
-axis(side=1, at=c(1,2,3,4,5,6,7,8), col="white")
-
-
-mtext("% Change Per Year", side=2, line=2)
-
-##violin plot NY
 
 
