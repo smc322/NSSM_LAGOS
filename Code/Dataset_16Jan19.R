@@ -1,6 +1,4 @@
-##want to make a dataset for Pavel & Marie to start testing out the model -- only spatial variation, not temporal. start here w/ Secchi b/c most data, and treat ts obs from 1990-present as replicates bc shouldn't change much. 
-
-#charlotte was here
+##want to make a dataset for Pavel & Marie to start testing out the model -- only spatial variation, not temporal. start here w/ Secchi b/c most data, and treat ts obs from 1990-present as replicates bc shouldn't change much.
 
 #16 Jan want to update to have more response variables
 
@@ -81,5 +79,5 @@ states<-lagos$state[,c("state_name", "state_zoneid")]
 data.sn<-merge(data.preds.ll, states, by="state_zoneid", all.x=T, all.y=F)
 data.sn$state_zoneid=NULL
 
-setwd("/Users/SarahiMac/Dropbox/Sarah_Work/Research/2018_A&S_SeedGrant_Pavel/Marie Postdoc Folder/Data/16Jan2019")
-write.csv(data.sn, file="LagosNonSecchi_16Jan2019.csv")
+#setwd("/Users/SarahiMac/Dropbox/Sarah_Work/Research/2018_A&S_SeedGrant_Pavel/Marie Postdoc Folder/Data/16Jan2019")
+#write.csv(data.sn, file="LagosNonSecchi_16Jan2019.csv")
