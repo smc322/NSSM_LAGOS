@@ -1,2 +1,3 @@
 # NSSM_LAGOS
-LAGOS data manipulation for analysis w/ Pavel &amp; Marie
+
+Non-stationary spatial model development with LAGOS-NE data. Code and figures for Narr et al. manuscript.
