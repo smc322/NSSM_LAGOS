@@ -298,7 +298,7 @@ sm_X1<-gam(N.P ~ s(nhd_long,nhd_lat,bs='tp'),
 
 gam.check(sm_X1)
 
-summary(sm_X1)
+summary((sm_X1))
 ###################### PLOTS ############################
 install.packages("plotrix")
 library(plotrix)
