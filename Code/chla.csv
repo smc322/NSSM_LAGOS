@@ -1,5 +1,0 @@
-location,Predictors,Estimates,HDIL,HDIU,Neff,Rhat
-Midwest,baseflowMW,-0.8,-1.3842632,-0.1902546,166,1.01
-NY,baseflowNY,-0.25,-2.046901,2.136975,134,1.03
-Midwest,forestMW,-0.88,-1.429661,-0.3504708,101,1.03
-NY,forestNY,0.64,-1.075882,2.185262,228,1.01
