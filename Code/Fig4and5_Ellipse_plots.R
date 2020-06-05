@@ -93,12 +93,14 @@ for(i in 1:S) {
   } else {
     Sig_array[,,i]<-kern_func_H2(pi*ang_S[i], lamb_S[i]) }} 
 
+
 #plot ellipses
 #using median angles: 101119851, 101119853 w 40 pts OK#### 11191991 for NY
 set.seed(11191992)
 n_pts<-50
 example_pts<-fields::cover.design(h_xy,n_pts,max.loop=50)
 
+png(filename="Figures/Fig4_ellipse.png", width=6.5, height=6.8, units='in', res=300)
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE), heights=c(1.5,1.5,1,1))
 par(oma=c(0,0,0,0), mar=c(2,2,1,1))
 rm<-7
@@ -131,7 +133,7 @@ for(i in j){
                radius=0.3,add=TRUE,draw=TRUE)
 }
 
-
+dev.off()
 ##STAN output for other response variables and regions
 
 #stan_mod<-readRDS("Data/ModelOutput/tp_ny_NS_samples_07102019_2.rds")
